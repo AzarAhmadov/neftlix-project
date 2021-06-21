@@ -112,7 +112,7 @@
 }
 
 #content .content form #text {
-  width: 620px;
+  width: 530px;
   height: 75px;
   line-height: 75px;
 }
@@ -135,7 +135,7 @@
 
 #content .content form #button {
   margin-left: 2px;
-  width: 300px;
+  width: 270px;
   height: 75px;
   color: #fff;
   background: red;
@@ -147,7 +147,8 @@
 
 @media (max-width: 991px) {
   .content h1 {
-    font-size: 55px;
+    font-size: 45px !important;
+    margin-top: 100px;
   }
   form {
     display: -webkit-box;
@@ -359,6 +360,7 @@
 
 #film .film-video .imo {
   width: 500px;
+  height: 100%;
 }
 
 #film-two {
@@ -564,5 +566,99 @@
     text-align: center;
     font-size: 17px;
   }
+}
+
+@media (max-width: 788px) {
+  #accardion h3 {
+    padding-top: 45px;
+    margin-bottom: 45px;
+    color: #fff;
+    font-size: 30px !important;
+  }
+  #accardion .btn-col #open-btn {
+    background: #303030;
+    border: none;
+    color: #fff;
+    width: 95% !important;
+    height: 70px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 7px;
+    font-size: 20px !important;
+  }
+}
+
+#accardion {
+  background: black;
+  border-bottom: 8px solid #4d4d4d;
+}
+
+#accardion h3 {
+  padding-top: 45px;
+  margin-bottom: 45px;
+  color: #fff;
+  font-size: 50px;
+}
+
+#accardion .btn-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 60px;
+}
+
+#accardion .btn-col #open-btn {
+  background: #303030;
+  border: none;
+  color: #fff;
+  width: 65%;
+  height: 70px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+#accardion .open-text {
+  width: 60%;
+  display: none;
+  opacity: 0;
+  padding: 10px;
+  color: #fff;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  font-style: italic;
 }
 /*# sourceMappingURL=sass.css.map */
