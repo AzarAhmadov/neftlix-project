@@ -1,19 +1,17 @@
 const dropdown = document.querySelector("#language");
 const drop = document.querySelector(".drop");
 
-dropdown.addEventListener("click" , togle );
+dropdown.addEventListener("click", togle);
 
-function togle(){
+function togle() {
   drop.classList.toggle("active");
 }
 
-// const opene = document.getElementsByTagName("button");
-// const opentext = document.querySelector(".open-text");
+const opene = document.querySelectorAll('.open-btn');
+const opentext = document.querySelectorAll(".open-text");
 
-// for(let i = 0 ; i < opene.length; i++){
-//   opene[i].addEventListener("click" , open);
-
-//   function open(){
-//     opentext.classList.toggle("active");
-//   }
-// }
+for(let i = 0 ; i<opene.length; i++){
+  opene[i].addEventListener('click' , (e) => {
+    opentext[i].classList.toggle('active');
+  })
+}

@@ -648,12 +648,40 @@
   margin-bottom: 7px;
 }
 
+#accardion .btn-col #open-btn i {
+  font-size: 24px;
+}
+
+#accardion .btn-col #open-btn i.active {
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
 #accardion .open-text {
-  width: 60%;
+  width: 65%;
+  font-size: 25px;
+  background: #303030;
   display: none;
-  opacity: 0;
   padding: 10px;
+  margin-bottom: 10px;
   color: #fff;
+}
+
+#accardion .open-text.active {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .open-text {
+    width: 95% !important;
+    font-size: 16px !important;
+    background: #303030;
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 footer {

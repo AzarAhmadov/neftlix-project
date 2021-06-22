@@ -576,19 +576,40 @@
             justify-content: space-between;
             font-size: 24px;
             margin-bottom: 7px;
+            i{
+             font-size: 24px;
+             &.active{
+                transition: 500ms all;
+                 transform: rotate(-12deg);
+
+             }
+            }
         }
     }
 
     .open-text {
-        width: 60%;
+        width: 65%;
+        font-size: 25px;
+        background: #303030;
         display: none;
-        opacity: 0;
         padding: 10px;
+        margin-bottom: 10px;
         color: #fff;
-        // &.active{
-        //   display: block;
-        //   opacity: 1;
-        // }
+        &.active{
+          display: block;
+        }
+    }
+}
+
+
+@media(max-width:700px){
+    .open-text {
+        width: 95% !important;
+        font-size: 16px !important ;
+        background: #303030;
+        display: none;
+        padding: 10px;
+        margin-bottom: 10px;
     }
 }
 
